@@ -1,0 +1,19 @@
+1. Build Docker Image: docker build -t zaag .
+2. Run Docker container: docker run -p 8000:8000 zaag
+3. Access Django: 127.0.0.:8000
+
+## Django Command Execute
+1. Container name: docker ps
+2. Access the Container: docker exec -it <container_name> bash
+3. Run django command: python manage.py createsuperuser
+4. Exit container: exit
+
+
+## API Test:
+## Crud API
+
+List Items (GET /items/): Retrieves a list of all items.
+Create Item (POST /items/): Creates a new item by sending a JSON payload.
+Retrieve Item (GET /items/<id>/): Retrieves a specific item by id.
+Update Item (PUT /items/<id>/): Updates an existing item by id.
+Delete Item (DELETE /items/<id>/): Deletes an item by id.
